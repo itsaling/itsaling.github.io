@@ -57,7 +57,7 @@ nav #nav-links a {
   color: #5c5252;
 }
 
-nav #nav-links .active {
+nav #nav-links a.active {
   color: #a890fe;
 }
 
@@ -662,6 +662,7 @@ nav .hamburger {
   .grid-wrapper .grid-item2 {
     -webkit-transform: translateX(-50px);
             transform: translateX(-50px);
+    padding-right: 0px;
   }
   .grid-wrapper .grid-item2 .icon-wrapper img {
     width: 70px;
