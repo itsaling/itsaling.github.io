@@ -411,7 +411,7 @@ nav {
   .grid-item2 {
     display: flex;
     flex-direction: column;
-    padding-right: 100px;
+    // padding-right: 100px;
     h1 {
       font-size: 4em;
     }
@@ -425,6 +425,7 @@ nav {
       ul {
         list-style-type: none;
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         li {
           font-size: 2em;
@@ -442,7 +443,7 @@ nav {
       }
       p {
         margin-top: 50px;
-        font-size: 2em;
+        font-size: 1.5em;
       }
     }
     .skills,
@@ -471,5 +472,95 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    transform: translateX(10px);
+  }
+
+  @include mobile {
+    display: flex;
+    .grid-item1,
+    .grid-item3 {
+      display: none;
+    }
+    .grid-item2 {
+      padding-right: 0;
+      .skills,
+      .experience,
+      .familiar,
+      .education {
+        text-align: center;
+      }
+      .familiar {
+        ul {
+          flex-direction: column;
+          li {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .icon-wrapper {
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+  @include tablet {
+    display: flex;
+    .grid-item1 {
+      .profile {
+        margin-left: 210px;
+      }
+    }
+    .grid-item2 {
+      transform: translateX(-60px);
+      padding-right: 100px;
+      .experience {
+        p {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  @include laptop {
+    .grid-item1 {
+      margin-left: -70px;
+      .profile {
+        margin-left: 150px;
+      }
+    }
+    .grid-item2 {
+      transform: translateX(-50px);
+
+      .icon-wrapper {
+        img {
+          width: 70px;
+        }
+      }
+      .familiar {
+        ul {
+          flex-direction: column;
+        }
+      }
+      .experience {
+        p {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  @include desktop {
+    .grid-item2 {
+      .icon-wrapper {
+        img {
+          width: 100px;
+        }
+      }
+      .experience {
+        p {
+          font-size: 2em;
+        }
+      }
+    }
   }
 }
