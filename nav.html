@@ -9,18 +9,25 @@
   </head>
   <body>
     <nav>
-      <a href="#"
+      <a href="/index.html"
         ><img class="logo" src="/Assets/Logo/logo-mobile.svg" alt=""
       /></a>
       <div id="nav-links">
-        <a href="/index.html" class="active">Home</a>
+        <a href="/index.html">Home</a>
         <a href="/profile.html">Profile</a>
-        <a href="#">Work</a>
-        <a href="#">Contact</a>
+        <a href="/work.html">Work</a>
+        <a href="/contact.html">Contact</a>
       </div>
       <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
         <img src="/Assets/Logo/hamburger.svg" alt="" />
       </a>
+      <script>
+        $(function() {
+          $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
+            "active"
+          );
+        });
+      </script>
     </nav>
     <script src="/script.js"></script>
   </body>

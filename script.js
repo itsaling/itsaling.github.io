@@ -2,10 +2,8 @@ function attachNav() {
   $("#nav-placeholder").load("nav.html");
 }
 
-function navActive(e) {
-  let activeLink = document.querySelectorAll(".active");
-  [].forEach.all(activeLink, function(link) {
-    link.classList.remove("active");
-  });
-  e.target.className = "active";
+function navActive() {
+  $('#nav-links a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
+    "active"
+  );
 }
