@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     .add({
       targets: ".pink-box",
-      translateX: [-600, -200],
+      translateX: [-600, -120],
       duration: 2000
     })
     .add({

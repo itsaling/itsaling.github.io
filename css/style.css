@@ -303,8 +303,8 @@ nav .hamburger {
   }
   .name .content {
     margin-top: 50px;
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translateX(90px);
+            transform: translateX(90px);
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
@@ -336,8 +336,8 @@ nav .hamburger {
     width: 600px;
   }
   .name .content {
-    -webkit-transform: translateX(150px);
-            transform: translateX(150px);
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
     margin-top: 70px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
