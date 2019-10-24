@@ -11,12 +11,28 @@
   </head>
   <body>
     <!-- attach nav -->
-    <div id="nav-placeholder">
+    <nav>
+      <a href="/index.html"
+        ><img class="logo" src="/Assets/Logo/logo-desktop.svg" alt=""
+      /></a>
+      <div id="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/profile.html">Profile</a>
+        <a href="/work.html">Project</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
+        <img src="/Assets/Logo/hamburger.svg" alt="" />
+      </a>
       <script>
-        attachNav();
+        $(function() {
+          $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
+            "active"
+          );
+        });
       </script>
-    </div>
-    <script src="/script.js"></script>
+    </nav>
+    <!-- end nav -->
     <div class="grid-wrapper">
       <div class="grid-item1">
         <div class="profile">

@@ -299,14 +299,12 @@ nav .hamburger {
 @media (min-width: 1100px) {
   .name .pink-box {
     width: 450px;
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
     z-index: -1;
   }
   .name .content {
     margin-top: 50px;
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
@@ -324,8 +322,7 @@ nav .hamburger {
     font-size: 1em;
   }
   .name .content .project {
-    -webkit-transform: translateX(55px);
-            transform: translateX(55px);
+    margin-left: 200px;
   }
   .name .dots {
     top: 390px;
@@ -364,6 +361,17 @@ nav .hamburger {
   }
 }
 
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,7 +390,6 @@ nav .hamburger {
 
 .intro .pink-dots {
   position: absolute;
-  right: 60px;
 }
 
 .intro .intro-text {
@@ -430,8 +437,7 @@ nav .hamburger {
   }
   .intro .pink-dots {
     width: 200px;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    margin-right: -100px;
     right: 150px;
   }
   .intro .purple-triangle {
@@ -745,6 +751,12 @@ nav .hamburger {
   height: 100px;
 }
 
+@media (min-width: 1100px) {
+  .flex-row h4 {
+    font-size: 1.5em;
+  }
+}
+
 .gallery {
   margin-top: 30px;
 }
@@ -778,5 +790,14 @@ nav .hamburger {
 
 .content-wrapper h2 {
   line-height: 80px;
+}
+
+@media (min-width: 1100px) {
+  .content-wrapper h2 {
+    font-size: 2em;
+  }
+  .content-wrapper p {
+    font-size: 1.5em;
+  }
 }
 /*# sourceMappingURL=style.css.map */

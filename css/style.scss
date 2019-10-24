@@ -258,12 +258,11 @@ nav {
   @include laptop {
     .pink-box {
       width: 450px;
-      transform: translateX(-200px);
       z-index: -1;
     }
     .content {
       margin-top: 50px;
-      transform: translateX(30px);
+      transform: translateX(10px);
       justify-content: end;
       align-items: flex-end;
 
@@ -277,7 +276,7 @@ nav {
         font-size: 1em;
       }
       .project {
-        transform: translateX(55px);
+        margin-left: 200px;
       }
     }
     .dots {
@@ -312,6 +311,14 @@ nav {
   }
 }
 
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateX(10px);
+  }
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -320,7 +327,7 @@ nav {
 
   .pink-dots {
     position: absolute;
-    right: 60px;
+    // margin-right: 60px;
   }
 
   .intro-text {
@@ -366,7 +373,7 @@ nav {
     }
     .pink-dots {
       width: 200px;
-      transform: translateX(100px);
+      margin-right: -100px;
       right: 150px;
     }
     .purple-triangle {
@@ -603,6 +610,11 @@ nav {
   justify-content: space-between;
   width: 100%;
   height: 100px;
+  @include laptop {
+    h4 {
+      font-size: 1.5em;
+    }
+  }
 }
 
 .gallery {
@@ -627,5 +639,14 @@ nav {
   padding: 2em;
   h2 {
     line-height: 80px;
+  }
+
+  @include laptop {
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.5em;
+    }
   }
 }
