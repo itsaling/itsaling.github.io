@@ -17,13 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: 2000,
       offset: "-=2000"
     })
-    .add({
-      targets: ".first,  .title",
-      translateY: [60, 0],
-      duration: 2000,
-      opacity: [0, 1],
-      offset: "-=1000"
-    })
+
     .add({
       targets: ".last, .project",
       translateY: [60, 0],
@@ -33,9 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .add({
       targets: ".pink-dots",
-      translateY: [-300, 0],
+      translateY: [-2000, 0],
       duration: 2000,
-      offset: "-=3000"
+      offset: "-=2000"
     })
     .add({
       targets: ".intro-text p",
@@ -46,8 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .add({
       targets: ".purple-triangle",
-      translateX: [600, 0],
-      duration: 3000,
-      offset: "-=2500"
+      translateY: [600, 0],
+      duration: 1000,
+      offset: "-=1800"
     });
 });

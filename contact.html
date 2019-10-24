@@ -11,11 +11,54 @@
     <title>Contact Me</title>
   </head>
   <body>
-    <!-- attach nav -->
-    <div id="nav-placeholder">
+    <!-- Attach Nav from nav.html-->
+    <nav>
+      <a href="/index.html"
+        ><img class="logo" src="/Assets/Logo/logo-desktop.svg" alt=""
+      /></a>
+      <div id="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/profile.html">Profile</a>
+        <a href="/work.html">Project</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
+        <img src="/Assets/Logo/hamburger.svg" alt="" />
+      </a>
       <script>
-        attachNav();
+        $(function() {
+          $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
+            "active"
+          );
+        });
       </script>
+    </nav>
+    <!-- end attachment -->
+
+    <div class="contact-content">
+      <h1>Contact</h1>
+      <div class="form">
+        <div class="name-section">
+          <input type="text" name="" autocomplete="off" required />
+          <label class="label-name" for="name">
+            <span class="content-name">Name</span>
+          </label>
+        </div>
+        <div class="name-section">
+          <input type="text" name="" autocomplete="off" required />
+          <label class="label-name" for="name">
+            <span class="content-name">Organization</span>
+          </label>
+        </div>
+        <div class="name-section message">
+          <input type="text" name="" autocomplete="off" required />
+          <label class="label-name" for="name">
+            <span class="content-name ">Message</span>
+          </label>
+        </div>
+
+        <button class="submit">Notify Me</button>
+      </div>
     </div>
   </body>
 </html>
