@@ -55,6 +55,12 @@ nav #nav-links a {
   font-weight: bold;
   text-decoration: none;
   color: #5c5252;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav #nav-links a:hover {
+  color: #a890fe;
 }
 
 nav #nav-links a.active {
@@ -90,6 +96,7 @@ nav #nav-links a.active {
 
 nav .logo {
   width: 30px;
+  cursor: pointer;
 }
 
 nav .hamburger {
@@ -472,6 +479,8 @@ nav .hamburger {
 }
 
 .grid-wrapper .grid-item1 .profile {
+  position: absolute;
+  top: 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,6 +559,11 @@ nav .hamburger {
 .grid-wrapper .grid-item2 .experience h4 {
   font-size: 2em;
   line-height: 50px;
+}
+
+.grid-wrapper .grid-item2 .experience ul {
+  padding-left: 30px;
+  list-style-type: circle;
 }
 
 .grid-wrapper .grid-item2 .experience p {
@@ -685,5 +699,84 @@ nav .hamburger {
   .grid-wrapper .grid-item2 .experience p {
     font-size: 2em;
   }
+}
+
+.title {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title h1.year {
+  font-size: 9em;
+  position: absolute;
+  z-index: -1;
+  color: #fff;
+  -webkit-text-stroke: 2px #70707069;
+}
+
+.title h1.p-name {
+  font-size: 3em;
+}
+
+.flex-row {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+
+.gallery {
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+@media (min-width: 601px) {
+  .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .gallery img {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .gallery img {
+    width: 400px;
+  }
+}
+
+.content-wrapper {
+  padding: 2em;
+}
+
+.content-wrapper h2 {
+  line-height: 80px;
 }
 /*# sourceMappingURL=style.css.map */
