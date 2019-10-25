@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       offset: "-=2000"
     })
     .add({
-      targets: ".first,  .title",
+      targets: ".first,  .job-title",
       translateY: [60, 0],
       duration: 2000,
       opacity: [0, 1],
@@ -49,5 +49,21 @@ document.addEventListener("DOMContentLoaded", () => {
       translateX: [600, 0],
       duration: 3000,
       offset: "-=2500"
+    })
+
+    .add({
+      targets: ".skills h1, .familiar ",
+      translateY: [20, 0],
+      opacity: [0, 1],
+      duration: 1000,
+      delay: (el, i) => 200 * i,
+      offset: "-=3200"
+    })
+    .add({
+      targets: ".icon-wrapper img",
+      translateX: [1500, 0],
+      duration: 1000,
+      delay: (el, i) => 100 * i,
+      offset: "-=3500"
     });
 });

@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="/Assets/Logo/favicon.ico"
+      type="image/x-icon"
+    />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="/script.js"></script>
 
@@ -12,10 +17,27 @@
   </head>
   <body>
     <!-- attach nav -->
-    <div id="nav-placeholder">
+    <nav>
+      <a href="/index.html"
+        ><img class="logo" src="/Assets/Logo/logo2.svg" alt=""
+      /></a>
+      <div id="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/profile.html">Profile</a>
+        <a href="/work.html">Project</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
+        <img src="/Assets/Logo/hamburger.svg" alt="" />
+      </a>
       <script>
-        attachNav();
+        $(function() {
+          $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
+            "active"
+          );
+        });
       </script>
-    </div>
+    </nav>
+    <!-- end nav -->
   </body>
 </html>

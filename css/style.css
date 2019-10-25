@@ -224,7 +224,7 @@ nav .hamburger {
   font-size: 7em;
 }
 
-.name .content .title {
+.name .content .job-title {
   text-transform: capitalize;
   font-weight: 100;
   font-size: 1.2em;
@@ -282,7 +282,7 @@ nav .hamburger {
   .name .content .last {
     font-size: 4em;
   }
-  .name .content .title {
+  .name .content .job-title {
     font-size: 1em;
   }
   .name .content .project {
@@ -318,7 +318,7 @@ nav .hamburger {
   .name .content .last {
     font-size: 5em;
   }
-  .name .content .title {
+  .name .content .job-title {
     font-size: 1em;
   }
   .name .content .project {
@@ -353,7 +353,7 @@ nav .hamburger {
   .name .content .last {
     font-size: 10em;
   }
-  .name .content .title {
+  .name .content .job-title {
     font-size: 2em;
   }
   .name .dots {
