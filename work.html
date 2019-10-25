@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>My Work</title>
   </head>
-  <body>
+  <body style="height: 100%;">
     <!-- attach nav -->
     <nav>
       <a href="/index.html"
@@ -28,19 +28,18 @@
       <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
         <img src="/Assets/Logo/hamburger.svg" alt="" />
       </a>
-      <script>
-        $(function() {
-          $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
-            "active"
-          );
-        });
-      </script>
     </nav>
     <!-- end nav -->
+    <div class="project-list">
+      <a href="#itsaling"><h2>Its Aling</h2></a>
+      <a href="#devtamin"><h2>Devtamin</h2></a>
+      <a href="#manechoice"><h2>ManeChoice</h2></a>
+      <a href="#findmypaws"><h2>Find My Paws</h2></a>
+    </div>
     <div class="grid-wrapper">
       <div class="grid-item1">
         <div class="profile">
-          <h4>Project</h4>
+          <h4>Projects</h4>
           <div class="line"></div>
         </div>
         <img class="deco1" src="/Assets/Background/profile/deco1.svg" alt="" />
@@ -48,6 +47,7 @@
       </div>
       <div class="grid-item2">
         <div class="project-wrapper">
+          <div id="itsaling" style="height: 100px"></div>
           <div class="title">
             <h1 class="year">2019</h1>
             <h1 class="p-name">It's Aling</h1>
@@ -56,13 +56,44 @@
           <div class="flex-row">
             <h4>Web Design</h4>
             <h4>Web Development</h4>
-            <h4 class="light">HTML5 | CSS | SCSS | JavaScript | JQuery</h4>
+            <div class="light">
+              <h4>HTML5</h4>
+              <h4>CSS</h4>
+              <h4>SCSS</h4>
+              <h4>JavaScript</h4>
+              <h4>JQuery</h4>
+            </div>
           </div>
 
           <div class="gallery">
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
+            <img
+              id="myImg"
+              src="./Assets/Photo/devkitchen.png"
+              alt=""
+              onclick="openModal(this)"
+            />
+
+            <img
+              id="myImg"
+              src="./Assets/Photo/devtamin.png"
+              alt=""
+              onclick="openModal(this)"
+            />
+            <img
+              id="myImg"
+              src="./Assets/Photo//itsaling.png"
+              alt=""
+              onclick="openModal(this)"
+            />
+          </div>
+
+          <div id="container" class="img-container">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="close"
+              >&times;
+            </span>
+            <img id="expand-img" style="width: 100%;" alt="" />
           </div>
 
           <div class="content-wrapper">
@@ -89,6 +120,7 @@
           </div>
         </div>
         <div class="project-wrapper">
+          <div id="devtamin" style="height: 100px"></div>
           <div class="title">
             <h1 class="year">2019</h1>
             <h1 class="p-name">Devtamin</h1>
@@ -97,13 +129,44 @@
           <div class="flex-row">
             <h4>Web Design</h4>
             <h4>Web Development (In-progress)</h4>
-            <h4 class="light">HTML5 | CSS | SCSS | JavaScript | JQuery</h4>
+            <div class="light">
+              <h4>HTML5</h4>
+              <h4>CSS</h4>
+              <h4>SCSS</h4>
+              <h4>JavaScript</h4>
+              <h4>JQuery</h4>
+            </div>
           </div>
 
           <div class="gallery">
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
+            <img
+              id="myImg"
+              src="./Assets/Photo/devkitchen.png"
+              alt=""
+              onclick="openModal2(this)"
+            />
+
+            <img
+              id="myImg"
+              src="./Assets/Photo/devtamin.png"
+              alt=""
+              onclick="openModal2(this)"
+            />
+            <img
+              id="myImg"
+              src="./Assets/Photo//itsaling.png"
+              alt=""
+              onclick="openModal2(this)"
+            />
+          </div>
+
+          <div id="container" class="img-container">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="close"
+              >&times;
+            </span>
+            <img id="expand-img2" style="width: 100%;" alt="" />
           </div>
 
           <div class="content-wrapper">
@@ -130,6 +193,8 @@
           </div>
         </div>
         <div class="project-wrapper">
+          <div id="manechoice" style="height: 100px"></div>
+
           <div class="title">
             <h1 class="year">2019</h1>
             <h1 class="p-name">ManeChoice</h1>
@@ -138,13 +203,40 @@
           <div class="flex-row">
             <h4>Andriod Development</h4>
             <h4>Fullstack Development</h4>
-            <h4 class="light">Kotlin</h4>
+            <div class="light">
+              <h4>Kotlin</h4>
+            </div>
           </div>
 
           <div class="gallery">
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
+            <img
+              id="myImg"
+              src="./Assets/Photo/devkitchen.png"
+              alt=""
+              onclick="openModal3(this)"
+            />
+
+            <img
+              id="myImg"
+              src="./Assets/Photo/devtamin.png"
+              alt=""
+              onclick="openModal3(this)"
+            />
+            <img
+              id="myImg"
+              src="./Assets/Photo//itsaling.png"
+              alt=""
+              onclick="openModal3(this)"
+            />
+          </div>
+
+          <div id="container" class="img-container">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="close"
+              >&times;
+            </span>
+            <img id="expand-img3" style="width: 100%;" alt="" />
           </div>
 
           <div class="content-wrapper">
@@ -171,6 +263,8 @@
           </div>
         </div>
         <div class="project-wrapper">
+          <div id="findmypaws" style="height: 100px"></div>
+
           <div class="title">
             <h1 class="year">2017</h1>
             <h1 class="p-name">Find My Paws</h1>
@@ -179,13 +273,44 @@
           <div class="flex-row">
             <h4>Web Design</h4>
             <h4>Web Development</h4>
-            <h4 class="light">HTML5 | CSS | SCSS | JavaScript | PHP</h4>
+            <div class="light">
+              <h4>HTML5</h4>
+              <h4>CSS</h4>
+              <h4>SCSS</h4>
+              <h4>JavaScript</h4>
+              <h4>PHP</h4>
+            </div>
           </div>
 
           <div class="gallery">
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
+            <img
+              id="myImg"
+              src="./Assets/Photo/devkitchen.png"
+              alt=""
+              onclick="openModal4(this)"
+            />
+
+            <img
+              id="myImg"
+              src="./Assets/Photo/devtamin.png"
+              alt=""
+              onclick="openModal4(this)"
+            />
+            <img
+              id="myImg"
+              src="./Assets/Photo//itsaling.png"
+              alt=""
+              onclick="openModal4(this)"
+            />
+          </div>
+
+          <div id="container" class="img-container">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="close"
+              >&times;
+            </span>
+            <img id="expand-img4" style="width: 100%;" alt="" />
           </div>
 
           <div class="content-wrapper">
@@ -221,6 +346,7 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
     ></script>
+    <script src="/animation.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>

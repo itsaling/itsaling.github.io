@@ -34,15 +34,14 @@
       <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
         <img src="/Assets/Logo/hamburger.svg" alt="" />
       </a>
-      <script>
-        $(function() {
-          $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
-            "active"
-          );
-        });
-      </script>
     </nav>
     <!-- end nav  -->
+
+    <div class="project-list">
+      <a href="#skills"> <h2>Skills</h2></a>
+      <a href="#experience"><h2>Experience</h2></a>
+      <a href="#education"><h2>Education</h2></a>
+    </div>
 
     <div class="grid-wrapper">
       <div class="grid-item1">
@@ -55,6 +54,8 @@
       </div>
       <div class="grid-item2">
         <div class="profile-content">
+          <div id="skills" style="height: 100px"></div>
+
           <div class="skills">
             <h1>Skills</h1>
             <div class="icon-wrapper">
@@ -78,9 +79,11 @@
           </div>
 
           <div class="experience">
+            <div id="experience" style="height: 100px"></div>
+
             <h1>Experience</h1>
             <h4>Driven Media Group</h4>
-            <h4 class="light">Web Developer</h4>
+            <h4 class="title-light">Web Developer</h4>
             <h4 class="italic">Jan 2019 - Current</h4>
             <p>
               Responsible for creating a responsive design and layout of a
@@ -112,7 +115,7 @@
 
           <div class="experience">
             <h4>Groove Commerce</h4>
-            <h4 class="light">Web Developer Intern</h4>
+            <h4 class="title-light">Web Developer Intern</h4>
             <h4 class="italic">Jun 2018 - Aug 2018</h4>
             <p>
               Worked alongside other developers to create a web application that
@@ -149,9 +152,11 @@
           </div>
 
           <div class="education">
+            <div id="education" style="height: 100px"></div>
+
             <h1>Education</h1>
             <h4>Towson University</h4>
-            <h4 class="light">Bachelor’s Computer Science</h4>
+            <h4 class="title-light">Bachelor’s Computer Science</h4>
             <h4 class="italic">May 2019</h4>
           </div>
 
