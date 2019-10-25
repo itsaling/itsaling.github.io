@@ -10,12 +10,17 @@
       href="/Assets/Logo/favicon.ico"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="/script.js"></script>
 
     <title>Contact Me</title>
   </head>
-  <body>
+  <body style="height: 100vh;">
     <!-- attach nav -->
     <nav>
       <a href="/index.html"
@@ -41,29 +46,40 @@
 
     <!-- end attachment -->
 
-    <div class="contact-content">
-      <h1>Contact</h1>
-      <div class="form">
-        <div class="name-section">
-          <input type="text" name="" autocomplete="off" required />
-          <label class="label-name" for="name">
-            <span class="content-name">Name</span>
-          </label>
+    <div class="grid-wrapper">
+      <div class="grid-item1">
+        <div class="profile position">
+          <h4>Contact</h4>
+          <div class="line"></div>
         </div>
-        <div class="name-section">
-          <input type="text" name="" autocomplete="off" required />
-          <label class="label-name" for="name">
-            <span class="content-name">Organization</span>
-          </label>
+        <img class="deco1" src="/Assets/Background/profile/deco1.svg" alt="" />
+      </div>
+      <div class="grid-item2 contact-content">
+        <div class="form">
+          <h1>Keep In Touch</h1>
+          <div class="name-section">
+            <input type="text" name="" autocomplete="off" required />
+            <label class="label-name" for="name">
+              <span class="content-name">Name</span>
+            </label>
+          </div>
+          <div class="name-section">
+            <input type="text" name="" autocomplete="off" required />
+            <label class="label-name" for="name">
+              <span class="content-name">Organization</span>
+            </label>
+          </div>
+          <div class="name-section message">
+            <input type="text" name="" autocomplete="off" required />
+            <label class="label-name" for="name">
+              <span class="content-name ">Message</span>
+            </label>
+          </div>
         </div>
-        <div class="name-section message">
-          <input type="text" name="" autocomplete="off" required />
-          <label class="label-name" for="name">
-            <span class="content-name ">Message</span>
-          </label>
-        </div>
-
         <button class="submit">Notify Me</button>
+      </div>
+      <div class="grid-item3">
+        <img class="deco2" src="/Assets/Background/profile/deco2.svg" alt="" />
       </div>
     </div>
   </body>
