@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .add({
       targets: ".grid-item2",
-      translateY: [100, 0],
+      translateY: [100, -100],
       opacity: [0, 1],
       offset: "-=3000"
     })

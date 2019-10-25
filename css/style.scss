@@ -427,6 +427,9 @@ a {
     font-size: 18px;
     transition: transform 0.3s ease;
   }
+  @include mobile {
+    display: none;
+  }
 }
 
 .grid-wrapper {
@@ -571,13 +574,14 @@ a {
   @include tablet {
     display: flex;
     .grid-item1 {
+      margin-left: -250px;
       .profile {
-        margin-left: 210px;
+        margin-left: 300px;
       }
     }
     .grid-item2 {
       transform: translateX(-60px);
-      padding-right: 100px;
+      // padding-right: 100px;
       .experience {
         p {
           font-size: 1.5em;

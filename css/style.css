@@ -508,6 +508,12 @@ a:hover {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
+@media (max-width: 600px) {
+  .project-list {
+    display: none;
+  }
+}
+
 .grid-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,13 +728,15 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
   }
+  .grid-wrapper .grid-item1 {
+    margin-left: -250px;
+  }
   .grid-wrapper .grid-item1 .profile {
-    margin-left: 210px;
+    margin-left: 300px;
   }
   .grid-wrapper .grid-item2 {
     -webkit-transform: translateX(-60px);
             transform: translateX(-60px);
-    padding-right: 100px;
   }
   .grid-wrapper .grid-item2 .experience p {
     font-size: 1.5em;
