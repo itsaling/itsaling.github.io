@@ -800,4 +800,99 @@ a:hover {
     font-size: 1.5em;
   }
 }
+
+.contact-content {
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form {
+  width: 50%;
+  overflow: hidden;
+}
+
+.form .name-section {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.form .name-section input {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  color: #5c5252;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  padding-bottom: 10px;
+}
+
+.form .name-section input:focus + .label-name .content-name,
+.form .name-section input:valid + .label-name .content-name {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 14px;
+  color: #a890fe;
+}
+
+.form .name-section input:focus + .label-name::after,
+.form .name-section input:valid + .label-name::after {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.form .name-section label {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form .name-section label::after {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #a890fe;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.form .name-section .content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form .submit {
+  padding: 20px;
+  background-color: #fff;
+  color: #ea8d8d;
+  font-size: 15px;
+  border: 4px solid #ea8d8d;
+}
 /*# sourceMappingURL=style.css.map */

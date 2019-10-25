@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .add({
       targets: ".pink-dots",
-      translateY: [-300, 0],
+      translateY: [-2000, 0],
       duration: 2000,
-      offset: "-=3000"
+      offset: "-=2000"
     })
     .add({
       targets: ".intro-text p",
