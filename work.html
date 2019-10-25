@@ -10,10 +10,9 @@
       href="/Assets/Logo/favicon.ico"
       type="image/x-icon"
     />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <title>My Work</title>
   </head>
-  <body>
+  <body style="height: 100%;">
     <!-- attach nav -->
     <nav>
       <a href="/index.html"
@@ -28,19 +27,18 @@
       <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
         <img src="/Assets/Logo/hamburger.svg" alt="" />
       </a>
-      <script>
-        $(function() {
-          $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
-            "active"
-          );
-        });
-      </script>
     </nav>
     <!-- end nav -->
+    <div class="project-list">
+      <a href="#itsaling"><h2>Its Aling</h2></a>
+      <a href="#devtamin"><h2>Devtamin</h2></a>
+      <a href="#manechoice"><h2>ManeChoice</h2></a>
+      <a href="#findmypaws"><h2>Find My Paws</h2></a>
+    </div>
     <div class="grid-wrapper">
       <div class="grid-item1">
         <div class="profile">
-          <h4>Project</h4>
+          <h4>Projects</h4>
           <div class="line"></div>
         </div>
         <img class="deco1" src="/Assets/Background/profile/deco1.svg" alt="" />
@@ -48,6 +46,7 @@
       </div>
       <div class="grid-item2">
         <div class="project-wrapper">
+          <div id="itsaling" style="height: 100px"></div>
           <div class="title">
             <h1 class="year">2019</h1>
             <h1 class="p-name">It's Aling</h1>
@@ -56,39 +55,86 @@
           <div class="flex-row">
             <h4>Web Design</h4>
             <h4>Web Development</h4>
-            <h4 class="light">HTML5 | CSS | SCSS | JavaScript | JQuery</h4>
+            <div class="light">
+              <h4>HTML5</h4>
+              <h4>CSS</h4>
+              <h4>SCSS</h4>
+              <h4>JavaScript</h4>
+              <h4>JQuery</h4>
+            </div>
           </div>
 
           <div class="gallery">
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
+            <img
+              id="myImg"
+              src="./Assets/Photo/itsaling/itsaling.png"
+              alt=""
+              onclick="openModal(this)"
+            />
+
+            <img
+              id="myImg"
+              src="./Assets/Photo/itsaling/itsaling-profile.png"
+              alt=""
+              onclick="openModal(this)"
+            />
+            <img
+              id="myImg"
+              src="./Assets/Photo/itsaling/itsaling-work.png"
+              alt=""
+              onclick="openModal(this)"
+            />
+          </div>
+
+          <div id="container" class="img-container">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="close"
+              >&times;
+            </span>
+            <img id="expand-img" style="width: 100%;" alt="" />
           </div>
 
           <div class="content-wrapper">
             <h2>What is it?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              eius aliquam inventore similique aut hic obcaecati, minima,
-              eligendi dolor magnam repudiandae unde quisquam labore sed veniam
-              a eaque ipsum repellendus vel! Nisi doloremque repellendus veniam
-              in libero laudantium similique atque. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Id delectus sunt accusantium
-              corrupti illum modi repellat eveniet aliquam perferendis aperiam
-              minima veritatis enim, unde tempore adipisci. Fugit recusandae
-              provident alias!
+              As you can already tell, its Aling is a website that I both
+              designed and developed to showcase my portfolio and skill set as a
+              front-end web developer. <br /><br />
+              I utilized Adobe XD to wireframe, design, and prototype the web
+              site before actually developing the HTML structure because it’s
+              much easier to have a vision and layout before spending time
+              developing it blindly. To build the site I took advantage of
+              libraries such as jquery, and anime.js to add simple animations to
+              the site to make it more interesting to the eyes.
             </p>
             <h2>Challenges</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              eius aliquam inventore similique aut hic obcaecati, minima,
-              eligendi dolor magnam repudiandae unde quisquam labore sed veniam
-              a eaque ipsum repellendus vel! Nisi doloremque repellendus veniam
-              in libero laudantium similique atque.
+              Designing the look of the website was the first part and the most
+              challenging part because I wanted the website to reflect my
+              personality while maintaining a clean and modern style. I’ve spent
+              a lot of time creating different versions of the site and
+              experiment with different color schemes as well as look for
+              inspiration in sites like Awwwards, dribble, and Pinterest.
+              Eventually, I landed on this current design to which I feel
+              channels my style and personality. <br /><br />
+              Another challenge I faced was building the website itself. There
+              were times where I would get stuck with CSS position and making
+              the site responsive. With lots of practice and hours of time spent
+              learning from other sources, I was able to accomplish my vision
+              within the first week of development.
             </p>
+          </div>
+          <div class="center-btn">
+            <a href="/index.html" target="blank">
+              <button class="livebtn">
+                See it Live
+              </button>
+            </a>
           </div>
         </div>
         <div class="project-wrapper">
+          <div id="devtamin" style="height: 100px"></div>
           <div class="title">
             <h1 class="year">2019</h1>
             <h1 class="p-name">Devtamin</h1>
@@ -97,39 +143,88 @@
           <div class="flex-row">
             <h4>Web Design</h4>
             <h4>Web Development (In-progress)</h4>
-            <h4 class="light">HTML5 | CSS | SCSS | JavaScript | JQuery</h4>
+            <div class="light">
+              <h4>HTML5</h4>
+              <h4>CSS</h4>
+              <h4>SCSS</h4>
+              <h4>JavaScript</h4>
+              <h4>JQuery</h4>
+            </div>
           </div>
 
           <div class="gallery">
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
+            <img
+              id="myImg"
+              src="./Assets/Photo/devtamin/devtamin.png"
+              alt=""
+              onclick="openModal2(this)"
+            />
+
+            <img
+              id="myImg"
+              src="./Assets/Photo/devtamin/devtamin-course.png"
+              alt=""
+              onclick="openModal2(this)"
+            />
+            <img
+              id="myImg"
+              src="./Assets/Photo/devtamin/devtamin-content.png"
+              alt=""
+              onclick="openModal2(this)"
+            />
+            <img
+              id="myImg"
+              src="./Assets/Photo/devtamin/devtamin-nav.png"
+              alt=""
+              onclick="openModal2(this)"
+            />
+          </div>
+
+          <div id="container" class="img-container">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="close"
+              >&times;
+            </span>
+            <img id="expand-img2" style="width: 100%;" alt="" />
           </div>
 
           <div class="content-wrapper">
             <h2>What is it?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              eius aliquam inventore similique aut hic obcaecati, minima,
-              eligendi dolor magnam repudiandae unde quisquam labore sed veniam
-              a eaque ipsum repellendus vel! Nisi doloremque repellendus veniam
-              in libero laudantium similique atque. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Id delectus sunt accusantium
-              corrupti illum modi repellat eveniet aliquam perferendis aperiam
-              minima veritatis enim, unde tempore adipisci. Fugit recusandae
-              provident alias!
+              Devtamin is a fun take on a learning platform such as Udemy. This
+              design was requested by a friend that is interested in owning a
+              website where visitors can go and watch tutorials on basic
+              programming, and etc. The vision for this website was to create a
+              fun and different environment for visitors while at the same time
+              provide simple and easy navigation to all the important contents.
+              <br /><br />
+              Here I also utilized Adobe XD to wireframe, design, and prototype
+              the web site. Assets such as logo were created using Adobe
+              illustrator
             </p>
             <h2>Challenges</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              eius aliquam inventore similique aut hic obcaecati, minima,
-              eligendi dolor magnam repudiandae unde quisquam labore sed veniam
-              a eaque ipsum repellendus vel! Nisi doloremque repellendus veniam
-              in libero laudantium similique atque.
+              Some challenges I faced while creating this site was the
+              responsiveness of the website and some Javascript functionalities.
+              But, because the website is still under development, there’s not
+              much to mention at this moment.
             </p>
+          </div>
+          <div class="center-btn">
+            <a
+              href="https://itsaling.github.io/devtamin.github.io/"
+              target="blank"
+            >
+              <button class="livebtn">
+                See it Live
+              </button>
+            </a>
           </div>
         </div>
         <div class="project-wrapper">
+          <div id="manechoice" style="height: 100px"></div>
+
           <div class="title">
             <h1 class="year">2019</h1>
             <h1 class="p-name">ManeChoice</h1>
@@ -138,39 +233,102 @@
           <div class="flex-row">
             <h4>Andriod Development</h4>
             <h4>Fullstack Development</h4>
-            <h4 class="light">Kotlin</h4>
+            <div class="light">
+              <h4>Kotlin</h4>
+            </div>
           </div>
 
-          <div class="gallery">
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
+          <div class="gallery-app">
+            <img
+              id="myImg"
+              class="phone-app"
+              src="./Assets/Photo/manechoice/manechoice.png"
+              alt=""
+              onclick="openModal3(this)"
+            />
+
+            <img
+              id="myImg"
+              class="phone-app"
+              src="./Assets/Photo/manechoice/manechoice-quiz.png"
+              alt=""
+              onclick="openModal3(this)"
+            />
+            <img
+              id="myImg"
+              class="phone-app"
+              src="./Assets/Photo/manechoice/manechoice-review.png"
+              alt=""
+              onclick="openModal3(this)"
+            />
+            <img
+              id="myImg"
+              class="phone-app"
+              src="./Assets/Photo/manechoice/manechoice-products.png"
+              alt=""
+              onclick="openModal3(this)"
+            />
+            <img
+              id="myImg"
+              class="phone-app"
+              src="./Assets/Photo/manechoice/manechoice-email.png"
+              alt=""
+              onclick="openModal3(this)"
+            />
+          </div>
+
+          <div id="container" class="img-container">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="close"
+              >&times;
+            </span>
+            <img id="expand-img3" style="width: 100%;" alt="" />
           </div>
 
           <div class="content-wrapper">
             <h2>What is it?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              eius aliquam inventore similique aut hic obcaecati, minima,
-              eligendi dolor magnam repudiandae unde quisquam labore sed veniam
-              a eaque ipsum repellendus vel! Nisi doloremque repellendus veniam
-              in libero laudantium similique atque. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Id delectus sunt accusantium
-              corrupti illum modi repellat eveniet aliquam perferendis aperiam
-              minima veritatis enim, unde tempore adipisci. Fugit recusandae
-              provident alias!
+              Mane Choice, is designed to help users find the right hair
+              products for their particular hair types based on the answers to
+              the quiz questions at the beginning of the app. By utilizing our
+              simple questions, the everyday user can navigate the complex world
+              of hair types with ease. <br /><br />
+              Our app utilizes series of different activities for each question
+              we ask the user to select. (Total of 6 questions).
+              <br /><br />
+              One of the challenges my team and I faced was the algorithm for
+              how are we’re going to recommend certain products for each of the
+              answer combinations. <br /><br />
             </p>
             <h2>Challenges</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              eius aliquam inventore similique aut hic obcaecati, minima,
-              eligendi dolor magnam repudiandae unde quisquam labore sed veniam
-              a eaque ipsum repellendus vel! Nisi doloremque repellendus veniam
-              in libero laudantium similique atque.
+              For the product recommend, my team host all our data through My
+              Json Server (GitHub Repo), then we make a network call to the the
+              server to retrieve the products.
+              <br /><br />
+              With the time that my team had, we narrowed down the most
+              important factors that contribute to the type of products that’s
+              going to be recommended (Type, Absorbent, and Fullness). Then for
+              the products, we broke it down to 4 categories which are
+              lightweight, normal, heavyweight and volumizing products.
+              <br /><br />
+              Another challenge was in the limitations in the amount of data can
+              be hosted using my JSON server. Our data exceeded the 10,000 max
+              contents so we had to host the JSON on two repositories.
             </p>
+          </div>
+          <div class="center-btn">
+            <a href="https://github.com/itsaling/ManeChoice" target="blank">
+              <button class="livebtn">
+                See repository
+              </button>
+            </a>
           </div>
         </div>
         <div class="project-wrapper">
+          <div id="findmypaws" style="height: 100px"></div>
+
           <div class="title">
             <h1 class="year">2017</h1>
             <h1 class="p-name">Find My Paws</h1>
@@ -179,36 +337,78 @@
           <div class="flex-row">
             <h4>Web Design</h4>
             <h4>Web Development</h4>
-            <h4 class="light">HTML5 | CSS | SCSS | JavaScript | PHP</h4>
+            <div class="light">
+              <h4>HTML5</h4>
+              <h4>CSS</h4>
+              <h4>JavaScript</h4>
+              <h4>PHP</h4>
+              <h4>MySQL</h4>
+            </div>
           </div>
 
           <div class="gallery">
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
-            <img src="./Assets/Photo/pineapple.png" alt="" />
+            <img
+              id="myImg"
+              src="./Assets/Photo/findmypaws/findmypaws.png"
+              alt=""
+              onclick="openModal4(this)"
+            />
+
+            <img
+              id="myImg"
+              src="./Assets/Photo/findmypaws/findmypaws-login.png"
+              alt=""
+              onclick="openModal4(this)"
+            />
+            <img
+              id="myImg"
+              src="./Assets/Photo/findmypaws/findmypaw-about.png"
+              alt=""
+              onclick="openModal4(this)"
+            />
+            <img
+              id="myImg"
+              src="./Assets/Photo/findmypaws/findmypaws-post.png"
+              alt=""
+              onclick="openModal4(this)"
+            />
+          </div>
+
+          <div id="container" class="img-container">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="close"
+              >&times;
+            </span>
+            <img id="expand-img4" style="width: 100%;" alt="" />
           </div>
 
           <div class="content-wrapper">
             <h2>What is it?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              eius aliquam inventore similique aut hic obcaecati, minima,
-              eligendi dolor magnam repudiandae unde quisquam labore sed veniam
-              a eaque ipsum repellendus vel! Nisi doloremque repellendus veniam
-              in libero laudantium similique atque. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Id delectus sunt accusantium
-              corrupti illum modi repellat eveniet aliquam perferendis aperiam
-              minima veritatis enim, unde tempore adipisci. Fugit recusandae
-              provident alias!
+              As fellow pet owners, we all love our pets and would do anything
+              for them. Sadly, on occasion pets have been known to run away, or
+              get lost during terrible natural disasters. In repsonse, we
+              founded a web application that would allow us to connect with
+              those whom have lost or found pets. <br /><br />
+              Find My Paws is a dynamic web application,functioning as a virtual
+              bulletin board dedicated for users to post information, search
+              for, and find their lost pets. <br /><br />
             </p>
             <h2>Challenges</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-              eius aliquam inventore similique aut hic obcaecati, minima,
-              eligendi dolor magnam repudiandae unde quisquam labore sed veniam
-              a eaque ipsum repellendus vel! Nisi doloremque repellendus veniam
-              in libero laudantium similique atque.
+              One challenge was face was creating the Login/signup validations.
+              Due to the lack of experience in PHP my team and I had a hard time
+              coming up with how to set the validation of various users via
+              their email and username.
             </p>
+          </div>
+          <div class="center-btn">
+            <a href="https://github.com/itsaling/FindMyPaw" target="blank">
+              <button class="livebtn">
+                See repository
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -221,6 +421,7 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
     ></script>
+    <script src="/animation.js"></script>
     <script src="/script.js"></script>
   </body>
 </html>
