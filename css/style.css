@@ -104,7 +104,7 @@ nav #nav-links a.active {
 }
 
 nav .logo {
-  width: 30px;
+  width: 40px;
   cursor: pointer;
   padding: 10px 0;
 }
@@ -738,6 +738,12 @@ a:hover {
     -webkit-transform: translateX(-60px);
             transform: translateX(-60px);
   }
+  .grid-wrapper .grid-item2 .familiar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .grid-wrapper .grid-item2 .experience p {
     font-size: 1.5em;
   }
@@ -975,5 +981,33 @@ a:hover {
   color: #ea8d8d;
   font-size: 15px;
   border: 4px solid #ea8d8d;
+}
+
+.center-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.livebtn {
+  padding: 20px;
+  background-color: #fff;
+  color: #ea8d8d;
+  font-size: 15px;
+  border: 4px solid #ea8d8d;
+  text-transform: uppercase;
+}
+
+.livebtn:hover {
+  background-color: #ea8d8d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.livebtn:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

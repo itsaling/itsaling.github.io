@@ -112,7 +112,7 @@ nav {
     }
   }
   .logo {
-    width: 30px;
+    width: 40px;
     cursor: pointer;
     padding: 10px 0;
   }
@@ -463,8 +463,7 @@ a {
   .grid-item2 {
     display: flex;
     flex-direction: column;
-    .project-wrapper {
-    }
+
     h1 {
       font-size: 4em;
     }
@@ -582,6 +581,11 @@ a {
     .grid-item2 {
       transform: translateX(-60px);
       // padding-right: 100px;
+      .familiar {
+        ul {
+          flex-direction: column;
+        }
+      }
       .experience {
         p {
           font-size: 1.5em;
@@ -780,5 +784,26 @@ a {
     color: $color-pink;
     font-size: 15px;
     border: 4px solid $color-pink;
+  }
+}
+
+.center-btn {
+  display: flex;
+  justify-content: center;
+}
+.livebtn {
+  padding: 20px;
+  background-color: #fff;
+  color: $color-pink;
+  font-size: 15px;
+  border: 4px solid $color-pink;
+  text-transform: uppercase;
+  &:hover {
+    background-color: $color-pink;
+    color: #fff;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
   }
 }
