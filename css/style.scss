@@ -796,7 +796,14 @@ a {
   }
 }
 
-.submit {
+.button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.submit,
+.reset {
+  width: 200px;
   padding: 20px;
   background-color: #fff;
   color: $color-pink;
@@ -812,6 +819,10 @@ a {
   &:focus {
     outline: none;
   }
+}
+.reset {
+  background-color: $color-pink;
+  color: white;
 }
 
 .center-btn {

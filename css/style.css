@@ -1004,7 +1004,17 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.submit {
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.submit,
+.reset {
+  width: 200px;
   padding: 20px;
   background-color: #fff;
   color: #ea8d8d;
@@ -1015,15 +1025,22 @@ a:hover {
   cursor: pointer;
 }
 
-.submit:hover {
+.submit:hover,
+.reset:hover {
   background-color: #ea8d8d;
   color: #fff;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 
-.submit:focus {
+.submit:focus,
+.reset:focus {
   outline: none;
+}
+
+.reset {
+  background-color: #ea8d8d;
+  color: white;
 }
 
 .center-btn {
