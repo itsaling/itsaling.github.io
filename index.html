@@ -14,26 +14,31 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
     ></script>
-    <script src="script.js"></script>
     <script src="/animation.js"></script>
+    <script src="script.js"></script>
 
     <title>Home</title>
   </head>
   <body style="height: 100vh">
     <!-- Attach Nav from nav.html-->
     <nav>
-      <a href="/index.html"
-        ><img class="logo" src="/Assets/Logo/logo2.svg" alt=""
-      /></a>
-      <div id="nav-links">
+      <!-- <a href="/index.html"> -->
+      <img
+        class="logo"
+        src="/Assets/Logo/logo2.svg"
+        alt="logo"
+        onclick="location.href='/index.html'"
+      />
+      <!-- </a> -->
+      <div class="nav-links">
         <a href="/index.html">Home</a>
         <a href="/profile.html">Profile</a>
         <a href="/work.html">Project</a>
         <a href="/contact.html">Contact</a>
       </div>
-      <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
-        <img src="/Assets/Logo/hamburger.svg" alt="" />
-      </a>
+      <div id="hamburger">
+        <img src="/Assets/Logo/hamburger.svg" alt="menu" onclick="openNav()" />
+      </div>
     </nav>
     <!-- end attachment -->
 
@@ -44,11 +49,12 @@
           <h1 class="first">LATSADAVANH</h1>
           <h1 class="last">LE</h1>
           <h4 class="job-title">front-end web developer</h4>
-          <a href="/work.html"
-            ><div class="project">
+          <a href="/work.html">
+            <div class="project">
               <h4>view project</h4>
-              <div class="line"></div></div
-          ></a>
+              <div class="line"></div>
+            </div>
+          </a>
         </div>
         <img class="dots" src="/Assets/Background/dots.svg" alt="" />
       </div>

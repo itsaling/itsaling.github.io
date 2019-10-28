@@ -10,6 +10,7 @@
       href="/Assets/Logo/favicon.ico"
       type="image/x-icon"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
@@ -24,15 +25,15 @@
       <a href="/index.html"
         ><img class="logo" src="/Assets/Logo/logo2.svg" alt=""
       /></a>
-      <div id="nav-links">
+      <div class="nav-links">
         <a href="/index.html">Home</a>
         <a href="/profile.html">Profile</a>
         <a href="/work.html">Project</a>
         <a href="/contact.html">Contact</a>
       </div>
-      <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
-        <img src="/Assets/Logo/hamburger.svg" alt="" />
-      </a>
+      <div id="hamburger">
+        <img src="/Assets/Logo/hamburger.svg" alt="menu" onclick="openNav()" />
+      </div>
     </nav>
     <!-- end nav  -->
 
@@ -48,8 +49,16 @@
           <h4>Profile</h4>
           <div class="line"></div>
         </div>
-        <img class="deco1" src="/Assets/Background/profile/deco1.svg" alt="" />
-        <img class="deco3" src="/Assets/Background/profile/deco3.svg" alt="" />
+        <img
+          class="deco1"
+          src="/Assets/Background/profile/deco1.svg"
+          alt="accent"
+        />
+        <img
+          class="deco3"
+          src="/Assets/Background/profile/deco3.svg"
+          alt="accent"
+        />
       </div>
       <div class="grid-item2">
         <div class="profile-content">
@@ -161,23 +170,28 @@
 
           <div class="icon-wrapper">
             <a href="https://github.com/itsaling" target="blank"
-              ><img src="/Assets/Icons/github-logo2.svg" alt=""
+              ><img src="/Assets/Icons/github-logo2.svg" alt="github"
             /></a>
             <a href="https://www.linkedin.com/in/alingle/" target="blank"
-              ><img src="/Assets/Icons/linkedin.svg" alt=""
+              ><img src="/Assets/Icons/linkedin.svg" alt="linkedin"
             /></a>
-            <a href="/contact.html" target="blank"
-              ><img src="/Assets/Icons/paper-plane.svg" alt=""
-            /></a>
-            <a href="https://github.com/itsaling" target="blank"
-              ><img src="/Assets/Icons/share.svg" alt=""
+            <a href="MAILTO:latsadavanh@gmail.com" target="blank"
+              ><img src="/Assets/Icons/paper-plane.svg" alt="Mail"
             /></a>
           </div>
         </div>
       </div>
       <div class="grid-item3">
-        <img class="deco2" src="/Assets/Background/profile/deco2.svg" alt="" />
-        <img class="deco4" src="/Assets/Background/profile/deco4.svg" alt="" />
+        <img
+          class="deco2"
+          src="/Assets/Background/profile/deco2.svg"
+          alt="accent"
+        />
+        <img
+          class="deco4"
+          src="/Assets/Background/profile/deco4.svg"
+          alt="accent"
+        />
       </div>
     </div>
   </body>

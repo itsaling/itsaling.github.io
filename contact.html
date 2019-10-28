@@ -10,13 +10,12 @@
       href="/Assets/Logo/favicon.ico"
       type="image/x-icon"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
-
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="/script.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
+    ></script>
+    <script src="/animation.js"></script>
+    <script src="script.js"></script>
 
     <title>Contact Me</title>
   </head>
@@ -26,15 +25,15 @@
       <a href="/index.html"
         ><img class="logo" src="/Assets/Logo/logo2.svg" alt=""
       /></a>
-      <div id="nav-links">
+      <div class="nav-links">
         <a href="/index.html">Home</a>
         <a href="/profile.html">Profile</a>
         <a href="/work.html">Project</a>
         <a href="/contact.html">Contact</a>
       </div>
-      <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
-        <img src="/Assets/Logo/hamburger.svg" alt="" />
-      </a>
+      <div id="hamburger">
+        <img src="/Assets/Logo/hamburger.svg" alt="menu" onclick="openNav()" />
+      </div>
     </nav>
 
     <!-- end attachment -->

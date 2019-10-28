@@ -10,6 +10,8 @@
       href="/Assets/Logo/favicon.ico"
       type="image/x-icon"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <title>My Work</title>
   </head>
   <body style="height: 100%;">
@@ -18,15 +20,15 @@
       <a href="/index.html"
         ><img class="logo" src="/Assets/Logo/logo2.svg" alt=""
       /></a>
-      <div id="nav-links">
+      <div class="nav-links">
         <a href="/index.html">Home</a>
         <a href="/profile.html">Profile</a>
         <a href="/work.html">Project</a>
         <a href="/contact.html">Contact</a>
       </div>
-      <a href="javascript:void(0);" class="hamburger" onclick="openNav()">
-        <img src="/Assets/Logo/hamburger.svg" alt="" />
-      </a>
+      <div id="hamburger">
+        <img src="/Assets/Logo/hamburger.svg" alt="menu" onclick="openNav()" />
+      </div>
     </nav>
     <!-- end nav -->
     <div class="project-list">
@@ -410,6 +412,18 @@
               </button>
             </a>
           </div>
+        </div>
+        <br /><br />
+        <div class="icon-wrapper">
+          <a href="https://github.com/itsaling" target="blank"
+            ><img src="/Assets/Icons/github-logo2.svg" alt="github"
+          /></a>
+          <a href="https://www.linkedin.com/in/alingle/" target="blank"
+            ><img src="/Assets/Icons/linkedin.svg" alt="linkedin"
+          /></a>
+          <a href="MAILTO:latsadavanh@gmail.com" target="blank"
+            ><img src="/Assets/Icons/paper-plane.svg" alt="Mail"
+          /></a>
         </div>
       </div>
       <div class="grid-item3">

@@ -1,8 +1,15 @@
-function navActive() {
-  $('#nav-links a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
-    "active"
-  );
-}
+const openNav = () => {
+  const navLink = document.querySelector(".nav-links");
+  const burger = document.querySelector("#hamburger");
+
+  const write = document.getElementById("write");
+
+  const logo = document.querySelector(".logo");
+
+  burger.addEventListener("click", () => {
+    navLink.classList.toggle("nav-slide");
+  });
+};
 
 $(function() {
   $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass(
