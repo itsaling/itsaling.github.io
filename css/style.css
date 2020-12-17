@@ -615,6 +615,7 @@ a:hover {
 
 .grid-wrapper .grid-item2 .familiar ul li {
   font-size: 2em;
+  line-height: 1.4;
 }
 
 .grid-wrapper .grid-item2 .experience {
@@ -626,8 +627,8 @@ a:hover {
 }
 
 .grid-wrapper .grid-item2 .experience h4 {
-  font-size: 2em;
-  line-height: 50px;
+  font-size: 2.2em;
+  line-height: 1.5;
 }
 
 .grid-wrapper .grid-item2 .experience ul {
@@ -644,7 +645,7 @@ a:hover {
 .grid-wrapper .grid-item2 .familiar,
 .grid-wrapper .grid-item2 .education {
   text-align: right;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .grid-wrapper .grid-item2 .skills h1,

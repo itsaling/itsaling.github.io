@@ -1,198 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="/Assets/Logo/favicon.ico"
-      type="image/x-icon"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
-    ></script>
-    <script src="/animation.js"></script>
-    <script src="script.js"></script>
-    <title>Profile</title>
-  </head>
-  <body>
-    <!-- attach nav -->
-    <nav>
-      <a href="/index.html"
-        ><img class="logo" src="/Assets/Logo/logo2.svg" alt=""
-      /></a>
-      <div class="nav-links">
-        <a href="/index.html">Home</a>
-        <a href="/profile.html">Profile</a>
-        <a href="/work.html">Project</a>
-        <a href="/contact.html">Contact</a>
-      </div>
-      <div id="hamburger">
-        <img src="/Assets/Logo/hamburger.svg" alt="menu" onclick="openNav()" />
-      </div>
-    </nav>
-    <!-- end nav  -->
 
-    <div class="project-list">
-      <a href="#skills"> <h2>Skills</h2></a>
-      <a href="#experience"><h2>Experience</h2></a>
-      <a href="#education"><h2>Education</h2></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="shortcut icon" href="/Assets/Logo/favicon.ico" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="/animation.js"></script>
+  <script src="script.js"></script>
+  <title>Profile</title>
+</head>
+
+<body>
+  <!-- attach nav -->
+  <nav>
+    <a href="/index.html"><img class="logo" src="/Assets/Logo/logo2.svg" alt="" /></a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/profile.html">Profile</a>
+      <a href="/work.html">Project</a>
+      <a href="/contact.html">Contact</a>
     </div>
+    <div id="hamburger">
+      <img src="/Assets/Logo/hamburger.svg" alt="menu" onclick="openNav()" />
+    </div>
+  </nav>
+  <!-- end nav  -->
 
-    <div class="grid-wrapper">
-      <div class="grid-item1">
-        <div class="profile">
-          <h4>Profile</h4>
-          <div class="line"></div>
-        </div>
-        <img
-          class="deco1"
-          src="/Assets/Background/profile/deco1.svg"
-          alt="accent"
-        />
-        <img
-          class="deco3"
-          src="/Assets/Background/profile/deco3.svg"
-          alt="accent"
-        />
+  <div class="project-list">
+    <a href="#skills">
+      <h2>Skills</h2>
+    </a>
+    <a href="#experience">
+      <h2>Experience</h2>
+    </a>
+    <a href="#education">
+      <h2>Education</h2>
+    </a>
+  </div>
+
+  <div class="grid-wrapper">
+    <div class="grid-item1">
+      <div class="profile">
+        <h4>Profile</h4>
+        <div class="line"></div>
       </div>
-      <div class="grid-item2">
-        <div class="profile-content">
-          <div id="skills" style="height: 100px"></div>
+      <img class="deco1" src="/Assets/Background/profile/deco1.svg" alt="accent" />
+      <img class="deco3" src="/Assets/Background/profile/deco3.svg" alt="accent" />
+    </div>
+    <div class="grid-item2">
+      <div class="profile-content">
+        <div id="skills" style="height: 100px"></div>
 
-          <div class="skills">
-            <h1>Skills</h1>
-            <div class="icon-wrapper">
-              <img src="/Assets/Icons/html-5.svg" alt="" />
-              <img src="/Assets/Icons/css.svg" alt="" />
-              <img src="/Assets/Icons/sass.svg" alt="" />
-              <img src="/Assets/Icons/javascript.svg" alt="" />
-              <img src="/Assets/Icons/php.svg" alt="" />
-              <img src="/Assets/Icons/github-logo.svg" alt="" />
-            </div>
-          </div>
-
-          <div class="familiar">
-            <h1>Familiar</h1>
-            <ul>
-              <li>Andriod Development</li>
-              <li>React.JS</li>
-              <li>Mysql</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
-
-          <div class="experience">
-            <div id="experience" style="height: 100px"></div>
-
-            <h1>Experience</h1>
-            <h4>Driven Media Group</h4>
-            <h4 class="title-light">Web Developer</h4>
-            <h4 class="italic">Jan 2019 - Current</h4>
-            <p>
-              Responsible for creating a responsive design and layout of a
-              Wordpress site by utilizing various plugins and custom contents
-              built using clean coded HTML5, CSS, JavaScript.
-            </p>
-            <p>Responsibilities:</p>
-            <ul>
-              <li>
-                <p>
-                  Create wireframes and prototypes using design tools such
-                  asPhotoshop, Adobe XD, Sketch and Figma.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Utilize elementor along with HTML5 and CSS to create
-                  wordpress sites.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Create custom landing
-                  pages/blog posts for various automotive client’s website.
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="experience">
-            <h4>Groove Commerce</h4>
-            <h4 class="title-light">Web Developer Intern</h4>
-            <h4 class="italic">Jun 2018 - Aug 2018</h4>
-            <p>
-              Worked alongside other developers to create a web application that
-              utilizes BigCommerce API to design a more user-friendly 301
-              redirects page for BigCommerce.
-            </p>
-            <p>Responsibilities:</p>
-            <ul>
-              <li>
-                <p>
-                  Utilized Laravel framework, SQL, HTML, CSS to develop the
-                  application.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Designed the wireframe and user interface for the application by
-                  analyzing the current issue with the existing application and
-                  what the user required.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Managed the backend for handling the 301 redirects data
-                  (CRUD, Search, Sort).
-                </p>
-              </li>
-              <li>
-                <p>
-                  Collaborated on the frontend for the entire application.
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="education">
-            <div id="education" style="height: 100px"></div>
-
-            <h1>Education</h1>
-            <h4>Towson University</h4>
-            <h4 class="title-light">Bachelor’s Computer Science</h4>
-            <h4 class="italic">May 2019</h4>
-          </div>
-
+        <div class="skills">
+          <h1>Skills</h1>
           <div class="icon-wrapper">
-            <a href="https://github.com/itsaling" target="blank"
-              ><img src="/Assets/Icons/github-logo2.svg" alt="github"
-            /></a>
-            <a href="https://www.linkedin.com/in/alingle/" target="blank"
-              ><img src="/Assets/Icons/linkedin.svg" alt="linkedin"
-            /></a>
-            <a href="MAILTO:latsadavanh@gmail.com" target="blank"
-              ><img src="/Assets/Icons/paper-plane.svg" alt="Mail"
-            /></a>
+            <img src="/Assets/Icons/html-5.svg" alt="" />
+            <img src="/Assets/Icons/css.svg" alt="" />
+            <img src="/Assets/Icons/sass.svg" alt="" />
+            <img src="/Assets/Icons/javascript.svg" alt="" />
+            <img src="/Assets/Icons/php.svg" alt="" />
+            <img src="/Assets/Icons/github-logo.svg" alt="" />
+          </div>
+          <br>
+          <div class="familiar">
+            <ul>
+              <li>SQL</li>
+              <li>Bootstrap</li>
+              <li>Responsive Web Design</li>
+              <li>UI/UX</li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="grid-item3">
-        <img
-          class="deco2"
-          src="/Assets/Background/profile/deco2.svg"
-          alt="accent"
-        />
-        <img
-          class="deco4"
-          src="/Assets/Background/profile/deco4.svg"
-          alt="accent"
-        />
+
+        <div class="familiar">
+          <h1>Familiar</h1>
+          <ul>
+            <li>Andriod Development</li>
+            <li>React.JS</li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <div id="experience" style="height: 100px"></div>
+          <h1>Experience</h1>
+          <h4>RagingBull</h4>
+          <h4 class="title-light">Web Developer</h4>
+          <h4 class="italic">Jan 2020 - Current</h4>
+          <ul>
+            <li>
+              <p>Transforming PSD design into clean HTML and CSS.</p>
+            </li>
+            <li>
+              <p>Utilizing Javascript to add functionally such as timer, countdown, redirects and many more to increase
+                engagement and sales.</p>
+            </li>
+            <li>
+              <p> Utilizing SQL to retrieve data and create various templates used for daily marketing reports.</p>
+            </li>
+            <li>
+              <p>Create and maintain various Wordpress sites including maintaining plugins, page development and seo
+                management. </p>
+            </li>
+            <li>
+              <p> Troubleshoot various tasks relating to Web Development created in Jira. </p>
+            </li>
+          </ul>
+        </div>
+        <div class="experience">
+          <div id="experience" style="height: 100px"></div>
+          <h4>Driven Media Group</h4>
+          <h4 class="title-light">Web Developer</h4>
+          <h4 class="italic">Jan 2019 - Jan 2020</h4>
+          <p>
+            Responsible for creating a responsive design and layout of a
+            Wordpress site by utilizing various plugins and custom contents
+            built using clean coded HTML5, CSS, JavaScript.
+          </p>
+          <p>Responsibilities:</p>
+          <ul>
+            <li>
+              <p>
+                Create wireframes and prototypes using design tools such
+                asPhotoshop, Adobe XD, Sketch and Figma.
+              </p>
+            </li>
+            <li>
+              <p>
+                Utilize elementor along with HTML5 and CSS to create
+                wordpress sites.
+              </p>
+            </li>
+            <li>
+              <p>
+                Create custom landing
+                pages/blog posts for various automotive client’s website.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h4>Groove Commerce</h4>
+          <h4 class="title-light">Web Developer Intern</h4>
+          <h4 class="italic">Jun 2018 - Aug 2018</h4>
+          <p>
+            Worked alongside other developers to create a web application that
+            utilizes BigCommerce API to design a more user-friendly 301
+            redirects page for BigCommerce.
+          </p>
+          <p>Responsibilities:</p>
+          <ul>
+            <li>
+              <p>
+                Utilized Laravel framework, SQL, HTML, CSS to develop the
+                application.
+              </p>
+            </li>
+            <li>
+              <p>
+                Designed the wireframe and user interface for the application by
+                analyzing the current issue with the existing application and
+                what the user required.
+              </p>
+            </li>
+            <li>
+              <p>
+                Managed the backend for handling the 301 redirects data
+                (CRUD, Search, Sort).
+              </p>
+            </li>
+            <li>
+              <p>
+                Collaborated on the frontend for the entire application.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="education">
+          <div id="education" style="height: 100px"></div>
+
+          <h1>Education</h1>
+          <h4>Towson University</h4>
+          <h4 class="title-light">Bachelor’s Degree, Computer Science</h4>
+          <h4 class="italic">May 2019</h4>
+        </div>
+
+        <div class="icon-wrapper">
+          <a href="https://github.com/itsaling" target="blank"><img src="/Assets/Icons/github-logo2.svg"
+              alt="github" /></a>
+          <a href="https://www.linkedin.com/in/alingle/" target="blank"><img src="/Assets/Icons/linkedin.svg"
+              alt="linkedin" /></a>
+          <a href="MAILTO:latsadavanh@gmail.com" target="blank"><img src="/Assets/Icons/paper-plane.svg"
+              alt="Mail" /></a>
+        </div>
       </div>
     </div>
-  </body>
+    <div class="grid-item3">
+      <img class="deco2" src="/Assets/Background/profile/deco2.svg" alt="accent" />
+      <img class="deco4" src="/Assets/Background/profile/deco4.svg" alt="accent" />
+    </div>
+  </div>
+</body>
+
 </html>
